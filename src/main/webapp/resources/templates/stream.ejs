@@ -1,0 +1,16 @@
+<% for(var i = 0; i < publishes.length; i++) {%>
+    <div class="row-fluid" style="border-bottom: 1px solid #E8E8E8; padding: 9px 12px 9px;">
+        <div class="span2">
+            <img src="<%= publishes[i].userProfileImageUrl %>">
+        </div>
+        <div class="span10">
+             <small><%= publishes[i].displayDate %></small>
+             <div>
+                <a href="/user/<%= publishes[i].userLoginName %>">
+                    <strong><%= publishes[i].userDisplayName %></strong>
+                </a>
+             </div>
+             <p><%= publishes[i].message %></p>
+        </div>     
+    </div>
+<% } %>            

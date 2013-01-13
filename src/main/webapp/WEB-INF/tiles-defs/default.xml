@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+    <definition name="userPage" template="/WEB-INF/template/template.jsp">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/user/user.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+    </definition>
+    
+    <definition name="userSettings" template="/WEB-INF/template/template.jsp">
+        <put-attribute name="title" value="Settings" />
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/user/settings.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+    </definition>
+    
+    <definition name="publicInfo" template="/WEB-INF/template/template.jsp">
+        <put-attribute name="title" value="Public Information" />
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/public.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+    </definition>
+
+</tiles-definitions>
