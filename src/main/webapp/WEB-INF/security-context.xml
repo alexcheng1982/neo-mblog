@@ -10,6 +10,7 @@
 	</global-method-security>
 
 	<http use-expressions="true">
+        <intercept-url pattern="/populate" access="permitAll" />
 		<intercept-url pattern="/**" access="hasRole('user')" />
 		<form-login />
 	</http>

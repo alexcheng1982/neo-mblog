@@ -14,6 +14,7 @@ public class DataPopulator {
 	
 	@Transactional
 	public void populate() {
+        userRepository.deleteAll();
 		User user1 = new User("alex", "Alex");
 		User user2 = new User("bob", "Bob");
 		user1.follow(user2);

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.chengfu.neomblog.service.DataPopulator;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class DataPopulationController {
@@ -14,7 +15,9 @@ public class DataPopulationController {
 	DataPopulator dataPopulator;
 	
 	@RequestMapping(value = "/populate", method = RequestMethod.GET)
-	public void populate() {
+    @ResponseBody
+	public String populate() {
 		dataPopulator.populate();
+        return "Sample data is populated.";
 	}
 }
